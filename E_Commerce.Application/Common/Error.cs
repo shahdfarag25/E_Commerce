@@ -1,5 +1,9 @@
-﻿namespace E_Commerce.Application.Common
+﻿using System.Text.Json.Serialization;
+
+namespace E_Commerce.Application.Common
 {
+
+    [JsonConverter(typeof(JsonStringEnumConverter))]
     public enum ErrorType
     {
         Failure =0 ,
